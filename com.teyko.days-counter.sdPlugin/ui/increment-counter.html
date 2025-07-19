@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <title>Increment Counter Settings</title>
+    <meta charset="utf-8" />
+    <script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+</head>
+
+<body>
+    <!--
+        Learn more about property inspector components at https://sdpi-components.dev/docs/components
+    -->
+    <sdpi-item label="Target Date">
+        <sdpi-calendar type="date" showlabels setting="targetDate"></sdpi-calendar>
+    </sdpi-item>
+
+    <sdpi-item label="Timezone">
+        <sdpi-select setting="timezone">
+            <option value="UTC">UTC</option>
+            <option value="America/New_York">New York (EST/EDT)</option>
+            <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
+            <option value="Europe/London">London (GMT/BST)</option>
+            <option value="Europe/Paris">Paris (CET/CEST)</option>
+            <option value="Europe/Berlin">Berlin (CET/CEST)</option>
+            <option value="Asia/Tokyo">Tokyo (JST)</option>
+            <option value="Asia/Shanghai">Shanghai (CST)</option>
+            <option value="Australia/Sydney">Sydney (AEDT/AEST)</option>
+        </sdpi-select>
+    </sdpi-item>
+
+    <sdpi-item label="Language">
+        <sdpi-select setting="language">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
+            <option value="it">Italiano</option>
+        </sdpi-select>
+    </sdpi-item>
+</body>
+
+</html>

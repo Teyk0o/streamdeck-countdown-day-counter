@@ -1,0 +1,65 @@
+{
+    "name": "days-counter-streamdeck",
+    "version": "1.0.0",
+    "description": "A professional Stream Deck plugin that displays customizable countdown to any target date with automatic updates and multi-language support",
+    "main": "bin/plugin.js",
+    "author": {
+        "name": "Teyko",
+        "url": "https://github.com/Teyk0o"
+    },
+    "license": "MIT",
+    "keywords": [
+        "streamdeck",
+        "plugin",
+        "countdown",
+        "days",
+        "date",
+        "timer",
+        "productivity",
+        "deadline",
+        "reminder",
+        "elgato"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Teyk0o/streamdeck-countdown-day-counter.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Teyk0o/streamdeck-countdown-day-counter/issues"
+    },
+    "homepage": "https://github.com/Teyk0o/streamdeck-countdown-day-counter#readme",
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "scripts": {
+        "build": "rollup -c",
+        "watch": "rollup -c -w --watch.onEnd=\"streamdeck restart com.teyko.days-counter\"",
+        "dev": "npm run watch",
+        "lint": "eslint src --ext .ts",
+        "clean": "rimraf bin",
+        "prebuild": "npm run clean"
+    },
+    "type": "module",
+    "devDependencies": {
+        "@elgato/cli": "^1.4.0",
+        "@rollup/plugin-commonjs": "^28.0.0",
+        "@rollup/plugin-node-resolve": "^15.2.2",
+        "@rollup/plugin-terser": "^0.4.4",
+        "@rollup/plugin-typescript": "^12.1.0",
+        "@tsconfig/node20": "^20.1.2",
+        "@types/node": "~20.15.0",
+        "rollup": "^4.0.2",
+        "tslib": "^2.6.2",
+        "typescript": "^5.2.2"
+    },
+    "dependencies": {
+        "@elgato/streamdeck": "^1.0.0"
+    },
+    "files": [
+        "com.teyko.days-counter.sdPlugin",
+        "bin",
+        "README.md",
+        "LICENSE",
+        "CHANGELOG.md"
+    ]
+}
