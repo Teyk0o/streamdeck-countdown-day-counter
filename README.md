@@ -18,7 +18,7 @@ A professional Stream Deck plugin that displays a customizable countdown to any 
 ## 🚀 Installation
 
 ### Manual Installation
-1. Download the latest release from [GitHub Releases](https://github.com/yourusername/days-counter/releases)
+1. Download the latest release from [GitHub Releases](https://github.com/Teyk0o/streamdeck-countdown-day-counter/releases/latest)
 2. Double-click the `.streamDeckPlugin` file
 3. Stream Deck software will automatically install the plugin
 
@@ -120,7 +120,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🐛 Bug Reports & Feature Requests
 
-If you encounter any issues or have suggestions for new features, please [open an issue](https://github.com/yourusername/days-counter/issues) on GitHub.
+If you encounter any issues or have suggestions for new features, please [open an issue](https://github.com/Teyk0o/streamdeck-countdown-day-counter/issues) on GitHub.
 
 ## 📊 Changelog
 
